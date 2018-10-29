@@ -1,4 +1,4 @@
-if keyboard_check(ord("D")){
+if keyboard_check(vk_right){
 	//right collision
 	if (place_meeting(x+mov_spd, y, obj_platform_master)){
 		while(!place_meeting(x+1, y, obj_platform_master)){
@@ -8,7 +8,7 @@ if keyboard_check(ord("D")){
 		x = min(room_width, x + mov_spd)
 	}
 }
-if keyboard_check(ord("A")){
+if keyboard_check(vk_left){
 	if (place_meeting(x-mov_spd, y, obj_platform_master)){
 		while(!place_meeting(x-1, y, obj_platform_master)){
 			x-= 1	
@@ -17,7 +17,7 @@ if keyboard_check(ord("A")){
 		x = max(0, x - mov_spd)
 	}
 }
-if keyboard_check(ord("W")) and (state == "GROUND" or state="PLATFORM"){
+if keyboard_check(vk_up) and (state == "GROUND" or state="PLATFORM"){
 	y_spd = jmp_init_spd_y
 	state = "AIR"
 }

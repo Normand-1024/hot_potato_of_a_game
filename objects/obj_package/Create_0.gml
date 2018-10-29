@@ -3,5 +3,8 @@ spd_y = 0
 grav = 10
 
 if_held = false
+touch_button = false
+
 
 state = "GROUND"
+
