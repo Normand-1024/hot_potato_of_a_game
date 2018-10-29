@@ -5,6 +5,13 @@ if !if_held{
 			y += sign(spd_y)
 		}
 		spd_y = 0
+		
+		if sign(spd_x + -sign(spd_x) * frict) != sign(spd_x){
+			spd_x = 0
+		}
+		else{
+			spd_x += -sign(spd_x) * frict
+		}
 	}
 	else{
 		y = min(room_height - sprite_height * image_yscale / 2,  y + spd_y)
@@ -22,18 +29,24 @@ if !if_held{
 	
 	//we only activiate the button if we are not being held
 	if touch_button == false{
-		if collision_rectangle(x - sprite_width * image_xscale / 2, 
+		button_ref = collision_rectangle(x - sprite_width * image_xscale / 2, 
 							   y - sprite_height * image_yscale / 2,
 							   x + sprite_width * image_xscale / 2,
 							   y + sprite_height * image_yscale / 2,
-							   obj_button, false, false){
-			touch_button = true
-			//move all the move platforms
-			show_debug_message(instance_number(obj_platform_move_all))
-			for (var i = 0; i < instance_number(obj_platform_move_all); i++){
-				var inst = instance_find(obj_platform_move_all, i)
-				inst.should_i_move = true;
+							   obj_button, false, false)
+		if button_ref{
+			if button_ref.object_index == obj_toggle_button{
+				touch_button = true
+				//move all the move platforms
+				show_debug_message(instance_number(obj_platform_move_all))
+				for (var i = 0; i < instance_number(obj_platform_move_all); i++){
+					var inst = instance_find(obj_platform_move_all, i)
+					inst.should_i_move = true;
+				}
 			}
+		}
+		else{
+			
 		}
 	}
 	

@@ -1,14 +1,14 @@
 {
-    "id": "1cf0abe3-c64f-4f3e-aa6c-8f1a77a67bc9",
+    "id": "d8d0daf4-ab30-499d-aab7-d8d4e9603515",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_button",
+    "name": "obj_hold_button",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "1cf0abe3-c64f-4f3e-aa6c-8f1a77a67bc9",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "5ab4ae98-d6d0-4817-b686-de17217c7cef",
     "visible": true
 }

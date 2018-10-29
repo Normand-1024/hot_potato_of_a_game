@@ -76,9 +76,18 @@ if holding and mouse_check_button(mb_left){
 }
 
 if not holding and holding_package != pointer_null and mouse_check_button(mb_right){
-	holding = true
-	holding_package.if_held = true
+	//holding = true
+	//holding_package.if_held = true
 	hold_lock_timer = 0
+	
+	len = sqrt(power(x - holding_package.x,2) + power(y - holding_package.y, 2))
+	back_x = (x - holding_package.x) / len
+	back_y = (y - holding_package.y) / len
+	holding_package.spd_x += back_spd * back_x
+	holding_package.spd_y += back_spd * back_y
+	
+	holding_package.spd_x = sign(holding_package.spd_x) * min(abs(holding_package.spd_x), back_max_spd)
+	holding_package.spd_y = sign(holding_package.spd_y) * min(abs(holding_package.spd_y), back_max_spd)
 }
 
 if hold_lock_timer >= 0 {

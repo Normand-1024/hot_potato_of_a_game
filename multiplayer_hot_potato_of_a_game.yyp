@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "366125e5-9e72-474c-b469-c5a34a5a7d57",
+            "Value": {
+                "id": "fabbb2a2-a943-477c-8770-ec232e30bf35",
+                "resourcePath": "objects\\obj_toggle_button\\obj_toggle_button.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3fb9c18f-ebaa-4ae4-ae20-dc2efe0b6c0c",
             "Value": {
                 "id": "490c31e3-8f31-4ae1-b365-ac0a20df03c0",
@@ -148,6 +156,14 @@
                 "id": "aba211a7-d70a-460a-b003-837d9b8b0a74",
                 "resourcePath": "views\\527dc864-234a-4aa8-a6b7-7bbdfd0c8cd7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5ab4ae98-d6d0-4817-b686-de17217c7cef",
+            "Value": {
+                "id": "2bfa91b4-1fee-40cd-a9f1-6f3f3d441723",
+                "resourcePath": "sprites\\spr_hold_button\\spr_hold_button.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -226,7 +242,7 @@
             "Key": "8fb809c8-94f7-4b39-925d-ba3c050589a4",
             "Value": {
                 "id": "646d77bd-8faf-4dda-b066-1da23556b8fa",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\level1\\level1.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -244,6 +260,14 @@
                 "id": "103f06e9-d16a-4621-b733-f9ce79a7806f",
                 "resourcePath": "sprites\\spr_platform\\spr_platform.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9f0523aa-4830-4361-a2ee-1e338bbe982d",
+            "Value": {
+                "id": "b31cdf5f-5ebe-4b1e-adf6-d787311e5558",
+                "resourcePath": "objects\\obj_levelmanager\\obj_levelmanager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -274,7 +298,7 @@
             "Key": "c3162268-b1b3-4557-ad42-e7c6e45679d7",
             "Value": {
                 "id": "cee41a80-7793-4b0e-87aa-36d76310c811",
-                "resourcePath": "sprites\\spr_button\\spr_button.yy",
+                "resourcePath": "sprites\\spr_toggle_button\\spr_toggle_button.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -292,6 +316,14 @@
                 "id": "989c37bc-cd0f-4670-b435-7b5c58afc28d",
                 "resourcePath": "sprites\\spr_player2\\spr_player2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d8d0daf4-ab30-499d-aab7-d8d4e9603515",
+            "Value": {
+                "id": "29824474-5d54-407c-9152-4841ce74ea54",
+                "resourcePath": "objects\\obj_hold_button\\obj_hold_button.yy",
+                "resourceType": "GMObject"
             }
         },
         {
