@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "obj_hold_button",
     "eventList": [
-        
+        {
+            "id": "d083ed39-fe1f-4711-8b54-7518402a4e56",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d8d0daf4-ab30-499d-aab7-d8d4e9603515"
+        },
+        {
+            "id": "8842e0c3-3358-4311-b3d3-8c73023947dd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d8d0daf4-ab30-499d-aab7-d8d4e9603515"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

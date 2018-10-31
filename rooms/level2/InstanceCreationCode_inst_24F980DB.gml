@@ -1,0 +1,1 @@
+hold_button_num = 2

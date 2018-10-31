@@ -5,3 +5,8 @@
 event_inherited();
 
 dir_to_move = "UP"
+
+platform_num = -1
+
+pos0_x = x
+pos0_y = y

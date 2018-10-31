@@ -39,11 +39,10 @@ if state == "AIR"{
 	}
 	y += y_spd
 	y_spd += jmp_grav
+	y_spd = sign(y_spd) * min(abs(y_spd), max_y_spd)
 	
-	if y >= room_height - sprite_height * image_yscale / 2 {
-		state = "GROUND"
-		y_spd = 0
-		y = room_height - sprite_height * image_yscale / 2
+	if y >= room_height - image_yscale / 2 + 2 {
+		y = 0 - sprite_height / 2
 	}
 }
 //need to check when I fall off platform to enable air mode
@@ -70,8 +69,6 @@ if holding and mouse_check_button(mb_left){
 	holding_package.spd_x = throw_spd * throw_x
 	holding_package.spd_y = throw_spd * throw_y
 	
-	//holding_package = pointer_null # Set null until the other player picks up the package
-	
 	hold_lock_timer = hold_cooldown
 }
 
@@ -92,4 +89,10 @@ if not holding and holding_package != pointer_null and mouse_check_button(mb_rig
 
 if hold_lock_timer >= 0 {
 	hold_lock_timer -= 1
+}
+
+if holding_package != pointer_null{
+	if holding_package.if_held and not holding{
+		holding_package = pointer_null
+	}
 }

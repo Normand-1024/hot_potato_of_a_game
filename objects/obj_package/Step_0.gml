@@ -1,4 +1,7 @@
 if !if_held{
+	while (place_meeting(x, y, obj_platform_master)){
+		x -= sign(spd_x)
+	}
 	spd_y += grav
 	if place_meeting(x, y+spd_y, obj_platform_master){
 		while (!place_meeting(x, y+sign(spd_y), obj_platform_master)){
@@ -14,12 +17,15 @@ if !if_held{
 		}
 	}
 	else{
-		y = min(room_height - sprite_height * image_yscale / 2,  y + spd_y)
+		if y > room_height + sprite_height / 2 + 1{
+			y = 0 - sprite_height / 2
+		}
+		y = min(room_height + sprite_height / 2 + 2,  y + spd_y)
 	}
 	
 	if place_meeting(x+spd_x, y, obj_platform_master){
 		while (!place_meeting(x+sign(spd_x), y, obj_platform_master)){
-			x += sign(spd_x)	
+			x += sign(spd_x)
 		}
 		spd_x = 0
 	}
@@ -27,6 +33,9 @@ if !if_held{
 		x = min(max(0, x + spd_x), room_width - sprite_width * image_xscale / 2)
 	}
 	
+	spd_y = sign(spd_y) * min(abs(spd_y), max_spd_y)
+	
+	/*
 	//we only activiate the button if we are not being held
 	if touch_button == false{
 		button_ref = collision_rectangle(x - sprite_width * image_xscale / 2, 
@@ -49,5 +58,6 @@ if !if_held{
 			
 		}
 	}
+	*/
 	
 }

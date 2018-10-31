@@ -1,1 +1,1 @@
-show_message("FK 1")
+hold_button_num = 0
