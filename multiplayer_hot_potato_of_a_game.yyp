@@ -64,6 +64,14 @@
             }
         },
         {
+            "Key": "15142060-f745-4e1c-a98f-93a94fbbfa74",
+            "Value": {
+                "id": "19919821-9699-4ece-8399-6b106dc49789",
+                "resourcePath": "scripts\\detect_collision_box\\detect_collision_box.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "17d7aaf2-9d2e-4eab-95db-3c6627c48684",
             "Value": {
                 "id": "20509408-e367-4f38-a864-dbeb75ee05fd",
@@ -369,7 +377,7 @@
         }
     ],
     "script_order": [
-        
+        "15142060-f745-4e1c-a98f-93a94fbbfa74"
     ],
     "tutorial": ""
 }

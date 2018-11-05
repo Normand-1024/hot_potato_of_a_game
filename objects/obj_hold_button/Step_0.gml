@@ -1,9 +1,5 @@
 if hold_button_num == 0{
-	if collision_rectangle(x - sprite_width / 2,
-							y - sprite_height / 2,
-							x + sprite_width / 2,
-							y + sprite_height / 2,
-							obj_package, false, true){
+	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height){
 		global.platform_open_lvl1 = true				
 	}
 	else{
@@ -11,17 +7,9 @@ if hold_button_num == 0{
 	}
 }
 else if hold_button_num == 1{
-	if collision_rectangle(x - sprite_width / 2,
-							y - sprite_height/ 2,
-							x + sprite_width/ 2,
-							y + sprite_height / 2,
-							obj_package, false, true)
+	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height)
 		or
-		collision_rectangle(x - sprite_width / 2,
-							y - sprite_height / 2,
-							x + sprite_width / 2,
-							y + sprite_height / 2,
-							obj_player2, false, true){
+		detect_collision_box(obj_player2, x, y, sprite_width, sprite_height){
 		global.platform_open_top_lvl2 = true
 	}
 	else{
@@ -29,17 +17,9 @@ else if hold_button_num == 1{
 	}
 }
 else if hold_button_num == 2{
-	if collision_rectangle(x - sprite_width / 2,
-							y - sprite_height/ 2,
-							x + sprite_width/ 2,
-							y + sprite_height / 2,
-							obj_package, false, true)
+	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height)
 		or
-		collision_rectangle(x - sprite_width / 2,
-							y - sprite_height / 2,
-							x + sprite_width / 2,
-							y + sprite_height / 2,
-							obj_player1, false, true){
+		detect_collision_box(obj_player1, x, y, sprite_width, sprite_height){
 		global.platform_open_bottom_lvl2 = true
 	}
 	else{
