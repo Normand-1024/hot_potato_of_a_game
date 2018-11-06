@@ -160,6 +160,14 @@
             }
         },
         {
+            "Key": "4aa7436e-aa7e-404c-9ce4-de7d78eca46f",
+            "Value": {
+                "id": "12f2fe9e-63ef-4fca-a723-189eb18443e0",
+                "resourcePath": "rooms\\level4\\level4.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "4e652a1f-aa3c-4571-89c2-09d2b47b204c",
             "Value": {
                 "id": "7bd1cf6a-e5d2-4019-84b8-947ba8b77527",

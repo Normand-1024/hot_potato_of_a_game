@@ -60,3 +60,65 @@ else if platform_num == 5{
 		}
 	}
 }
+//room 4
+else if platform_num == 6{
+	if global.platform_small_entrance_lvl4{
+		x = pos0_x
+		y = pos0_y-125
+	}
+	else{
+		x = pos0_x
+		y = pos0_y
+	}
+}
+else if platform_num == 7{
+	if global.platform_top_left_block_lvl4{
+		x = pos0_x-100
+		y = pos0_y
+	}
+	else{
+		x = pos0_x
+		y = pos0_y
+	}
+}
+else if platform_num == 8{
+	if global.platform_step_up_lvl4{
+		x = pos0_x
+		y = pos0_y-60
+	}
+	else{
+		x = pos0_x
+		y = pos0_y
+	}
+}
+else if platform_num == 9{
+	if global.platform_upper_left_right_lvl4{
+		y = pos0_y
+		if (place_meeting(x+spd,y, obj_platform_master)){
+			while(!place_meeting(x+spd, y, obj_platform_master)){
+				x += sign(spd)	
+			}
+			tmp = 15
+			spd = tmp * sign(spd)
+			spd *= -1
+		}else{
+			x += spd
+		}
+	}
+}
+else if platform_num == 10{
+	if global.platform_lower_left_right_lvl4{
+		y = pos0_y
+		if (place_meeting(x+spd,y, obj_platform_master)){
+			while(!place_meeting(x+spd, y, obj_platform_master)){
+				x += sign(spd)	
+			}
+			tmp = 15
+			spd = tmp * sign(spd)
+			spd *= -1
+		}else{
+			x += spd
+		}
+	
+	}
+}

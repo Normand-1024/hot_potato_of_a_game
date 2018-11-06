@@ -51,6 +51,9 @@ if state == "PLATFORM"{
 		y_spd = 1
 		state = "AIR"
 	}
+	while (place_meeting(x, y, obj_platform_master)){
+		y-=1;
+	}
 }
 
 if holding and holding_package{

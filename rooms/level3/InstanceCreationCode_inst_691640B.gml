@@ -1,1 +1,1 @@
-hold_button_num = 4
+hold_button_num = 0

@@ -1,5 +1,3 @@
-
-
 if keyboard_check(vk_right){
 	//right collision
 	if (place_meeting(x+mov_spd, y, obj_platform_master)){
@@ -52,6 +50,9 @@ if state == "PLATFORM"{
 	if !place_meeting(x, y+1, obj_platform_master){
 		y_spd = 1
 		state = "AIR"
+	}
+	while (place_meeting(x, y, obj_platform_master)){
+		y-=1;
 	}
 }
 
