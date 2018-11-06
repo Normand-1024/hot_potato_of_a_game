@@ -17,12 +17,18 @@ else if hold_button_num == 1{
 	}
 }
 else if hold_button_num == 2{
-	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height)
-		or
-		detect_collision_box(obj_player1, x, y, sprite_width, sprite_height){
+	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height){
 		global.platform_open_bottom_lvl2 = true
 	}
 	else{
 		global.platform_open_bottom_lvl2 = false
+	}
+}
+else if hold_button_num == 5{
+	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height){
+		global.platform_raise_floor_lvl3 = true
+	}
+	else{
+		global.platform_raise_floor_lvl3 = false
 	}
 }
