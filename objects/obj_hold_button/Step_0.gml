@@ -17,7 +17,9 @@ else if hold_button_num == 1{
 	}
 }
 else if hold_button_num == 2{
-	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height){
+	if detect_collision_box(obj_package, x, y, sprite_width, sprite_height)
+		or
+		detect_collision_box(obj_player1, x, y, sprite_width, sprite_height){
 		global.platform_open_bottom_lvl2 = true
 	}
 	else{

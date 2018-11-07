@@ -73,7 +73,7 @@ else if platform_num == 6{
 }
 else if platform_num == 7{
 	if global.platform_top_left_block_lvl4{
-		x = pos0_x-100
+		x = pos0_x-200
 		y = pos0_y
 	}
 	else{

@@ -3,6 +3,10 @@ if !if_held{
 		x -= sign(spd_x)
 	}
 	spd_y += grav
+	
+	if y > room_height + sprite_height / 2 + 1{
+		y = 0 - sprite_height / 2
+	}
 	if place_meeting(x, y+spd_y, obj_platform_master){
 		while (!place_meeting(x, y+sign(spd_y), obj_platform_master)){
 			y += sign(spd_y)
@@ -17,9 +21,6 @@ if !if_held{
 		}
 	}
 	else{
-		if y > room_height + sprite_height / 2 + 1{
-			y = 0 - sprite_height / 2
-		}
 		y = min(room_height + sprite_height / 2 + 2,  y + spd_y)
 	}
 	
