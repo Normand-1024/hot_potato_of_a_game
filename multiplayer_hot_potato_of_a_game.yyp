@@ -232,11 +232,27 @@
             }
         },
         {
+            "Key": "63587bdf-d3ff-4e0d-af22-7fd105630a2c",
+            "Value": {
+                "id": "25c381c4-7557-4ff2-8d2b-771cd65c3632",
+                "resourcePath": "objects\\obj_gui\\obj_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72ae8fbb-4d09-4c25-9cc6-ef903627bada",
             "Value": {
                 "id": "235c7a05-f7c7-445e-9f99-ebb179b175f8",
                 "resourcePath": "views\\72ae8fbb-4d09-4c25-9cc6-ef903627bada.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "746e2a60-3729-48e0-ada5-92b4d3ff37f4",
+            "Value": {
+                "id": "788aeada-89cc-4f7d-8ac3-59fa090854e9",
+                "resourcePath": "rooms\\title_screen\\title_screen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -357,6 +373,14 @@
                 "id": "29824474-5d54-407c-9152-4841ce74ea54",
                 "resourcePath": "objects\\obj_hold_button\\obj_hold_button.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "db11c8c4-952c-47d3-b5b5-8b66b605c3ff",
+            "Value": {
+                "id": "fe9dde87-6b01-4fc5-b6a6-b19c698bb43b",
+                "resourcePath": "fonts\\font_14\\font_14.yy",
+                "resourceType": "GMFont"
             }
         },
         {
